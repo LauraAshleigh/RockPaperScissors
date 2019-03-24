@@ -1,0 +1,59 @@
+<!-- Title - Rock Paper Scissors
+// Background image (something blue/green or office like)
+
+// Panel 1 - Player
+// Three buttons: rock, paper and scissors
+// Space to show what player chose
+// Background color to show who wins each round
+// Box at bottom to keep track of running score
+
+// Panel 2 - Computer
+// // Space to show what player chose
+// Background color to show who wins each round
+// Box at bottom to keep track of running score
+
+// Button at bottom to choose to reset score
+// Option to select 'best of?'-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>Rock Paper Scissors</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <div class="player-panel">
+                <div class="name">Player</div>
+                <div class="result"><img src="rock.jpeg" class="rps" id="result-player"></div>
+                <button class="btn-rock"><i class="fas fa-hand-rock"></i>Rock</button>
+                <button class="btn-paper"><i class="fas fa-hand-paper"></i>Paper</button>
+                <button class="btn-scissors"><i class="fas fa-hand-scissors"></i>Scissors</button>
+                <div class="score-box">
+                    <div class="score-label">Running Score</div>
+                    <div class="score" id="score-player">11</div>
+                </div>
+            </div>
+            <div class="computer-panel">
+                <div class="name">Computer</div>
+                <div class="result"><img src="paper.jpeg" class="rps" id="result-computer"></div>
+                <div class="score-box">
+                    <div class="score-label">Running Score</div>
+                    <div class="score" id="score-computer">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-reset"><i class="fas fa-undo"></i>Reset scores</button>
+            
+        </div>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
