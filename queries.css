@@ -1,0 +1,67 @@
+/* Small tablet to big tablet: from 768 to 1023px */
+@media only screen and (max-width: 1023px){
+    
+    body{ font-size: 18px; }
+    .wrapper{ width: 700px; }
+    .score-box { width: 60%; }
+    .result{ height: 150px; }
+    .btn-rock, .btn-paper, .btn-scissors{ 
+    font-size: 15px;
+    left: 50px;
+    }
+
+    .btn-rock{ top: 220px; }
+    .btn-paper{ top: 270px; }
+    .btn-scissors{ 
+        top: 320px;
+        left: 60px;
+    }
+}
+
+/* Small phones to small tablets: from 481 to 767px */
+@media only screen and (max-width: 767px){
+    
+    body{ 
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .wrapper{ 
+        width: 500px; 
+        height: 500px;
+    }
+    .score-box{ width: 60%; }
+    .result{ height: 80px; }
+    .btn-rock, .btn-paper, .btn-scissors{ 
+    font-size: 10px;
+    left: 50px;
+    }
+
+    .btn-rock{ top: 170px; }
+    .btn-paper{ top: 220px; }
+    .btn-scissors{ 
+        top: 270px;
+        left: 60px;
+    }
+    .btn-reset { top: 400px;}
+    .player-panel,
+    .computer-panel { padding: 80px 50px; }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px){
+    
+    .name{ margin-top: 60px; }
+    .btn-reset { top: 430px;}
+    .btn-rock{ 
+        top: 20px;
+        left: 100px;
+    }
+    .btn-paper{ 
+        top: 60px;
+        left: 100px;
+    }
+    .btn-scissors{ 
+        top: 100px;
+        left: 110px;
+    }
+}
